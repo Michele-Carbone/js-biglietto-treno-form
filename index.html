@@ -10,9 +10,41 @@
 </head>
 
 <body>
-    <main>
+    <div class="container">
 
-    </main>
+        <head>
+            <h1 class="mt-20 mb-20">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </head>
+        <main>
+            <section id="form" class="ml-50 mr-50">
+                <div class="row ">
+
+
+                    <div class="col mt-20 mb-20">
+                        <label for="name">Nome Cognome</label>
+                        <input type="text" class="form-area" id="name">
+
+                    </div>
+                    <div class="col mt-20 mb-20">
+                        <label for="kms">Km da percorrere</label>
+                        <input type="text" class="form-area" id="kms" min="10" step="5" value="10">
+
+                    </div>
+                    <div class="col mt-20 mb-20">
+                        <h4>Fascia d'età</h4>
+                    </div>
+                </div>
+
+                <!--Generet buttom-->
+                <div class="row mt-20 mb-50 ml-50 mr-50 pb-15">
+                    <button type="button" id="generate-ticket" class="col mt-20 mb-20">Genera</button>
+                    <button type="button" id="generate-ticket" class="col mt-20 mb-20">Annulla</button>
+
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 

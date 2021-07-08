@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*classic container*/
+.container{
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+/*flex*/
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap  /*importante*/
+    
+}
+
+[class*='col']{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+}
+
+/*columns auto*/
+
+.col{
+    flex-grow: 1;
+}
+
+body{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*UTILITI*/
+.mt-20{
+    margin-top: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.ml-50{
+    margin-left: 50px;
+}
+
+.mr-50{
+    margin-right: 50px;
+}
+
+.pb-15{
+    padding-bottom: 15px;
+}
+/*section 1*/
+#form{
+    background-color: white;
+    border-radius: 10px;
+    color: violet;
+}
+
+/*Buttom*/
+#generate-ticket{
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    background-color: rgb(185, 185, 185);
+    color: indianred;
+    margin: 5px;
+    padding: 3px;
+}
+
+
+/*section 2*/
+
+
