@@ -18,8 +18,7 @@
         <main>
             <section id="form" class="ml-50 mr-50">
                 <div class="row ">
-
-
+                    <!--FORM USERS-->
                     <div class="col mt-20 mb-20">
                         <label for="name">Nome Cognome</label>
                         <input type="text" class="form-area" id="name">
@@ -31,16 +30,66 @@
 
                     </div>
                     <div class="col mt-20 mb-20">
-                        <h4>Fascia d'età</h4>
+                        <label for="age">Fascia d'età</label>
+                        <select id="age">
+                            <option value="min">Minorenne</option>
+                            <option value="maj">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
                     </div>
                 </div>
 
                 <!--Generet buttom-->
                 <div class="row mt-20 mb-50 ml-50 mr-50 pb-15">
                     <button type="button" id="generate-ticket" class="col mt-20 mb-20">Genera</button>
-                    <button type="button" id="generate-ticket" class="col mt-20 mb-20">Annulla</button>
+                    <button type="button" id="reset" class="col mt-20 mb-20">Annulla</button>
 
                     </button>
+                </div>
+            </section>
+            <h2 class="mt-20 mb-20">IL TUO BIGLIETTO</h2>
+            <section id="ticket-passeger" class="ml-50 mr-50">
+
+                <div class="mt-20 mb-20">
+                    <h3 class="pt-20 pb-15">DETTAGLIO PASSEGGERO</h3>
+                    <div class="row mt-20 mb-20">
+                        <div class="col row blockPassenger">
+                            <div class="col ">
+                                <h3 class="mb-20">Nome Passeggero</h3>
+                                <span id="passenger-name" class="mt-20 mb-20"></span>
+                            </div>
+
+                        </div>
+                        <div class="col row">
+                            <div class="col ">
+                                <h3 class="mb-20">Offerta</h3>
+                                <span id="discount" class="mt-20 mb-20"></span>
+                            </div>
+
+                        </div>
+                        <div class="col row">
+                            <div class="col ">
+                                <h3 class="mb-20">Carrozza</h3>
+                                <span id="car" class="mt-20 mb-20"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="col row">
+                            <div class="col ">
+                                <h3 class="mb-20">Codice CP</h3>
+                                <span id="train-code" class="mt-20 mb-20"></span>
+                            </div>
+
+                        </div>
+                        <div class="col row">
+                            <div class="col ">
+                                <h3 class="mb-20">Costo Biglietto</h3>
+                                <span id="price" class="mt-20 mb-20"></span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
